@@ -1,4 +1,16 @@
 Rails.application.routes.draw do
+
+  get 'screens/home'
+  root 'screens#home'
+
+
+
+  get 'upload' => 'screens#upload' , as: :upload
+
+  get 'contact' => 'screens#contact' , as: :contact
+
+  get 'help' => 'screens#help' , as: :help
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
