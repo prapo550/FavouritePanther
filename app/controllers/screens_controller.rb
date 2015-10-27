@@ -10,4 +10,7 @@ class ScreensController < ApplicationController
 
   def help
   end
+
+  def about
+  end
 end

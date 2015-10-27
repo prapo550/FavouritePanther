@@ -11,6 +11,10 @@ Rails.application.routes.draw do
 
   get 'help' => 'screens#help' , as: :help
 
+  get 'about' => 'screens#about' , as: :about
+
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
