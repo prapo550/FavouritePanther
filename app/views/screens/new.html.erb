@@ -1,0 +1,28 @@
+<h3>Please Upload Image Here</h3>
+<% @user.errors.messages.each do |msg| %>
+    <li><%= msg[0]%>----<%= msg[1][0]%></li>
+
+<% end %>
+<br>
+<br>
+
+<%= form_for :user do |u| %>
+    <div>
+      First Name:  <%= u.text_field :first_name %><br><br>
+      Last Name: <%= u.text_field :last_name %><br><br>
+
+      Email:  <%= u.text_field :email %><br><br>
+      Mailing Address: <%= u.text_field :mailing_address %><br><br>
+      Phone Number: <%= u.text_field :phone_number %><br><br>
+      Zip Code: <%= u.text_field :zip_code %><br><br>
+
+
+    </div>
+    <div>
+      <%= u.submit "Sign Up" %>
+      </div>
+      <% end %>
+
+<footer>
+  <p>&copy; Owens Corning 2015</p>
+</footer>

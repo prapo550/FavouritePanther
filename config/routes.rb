@@ -3,15 +3,17 @@ Rails.application.routes.draw do
   get 'screens/home'
   root 'screens#home'
 
+get 'new' => 'screens#new'
 
+  post 'new' => 'screens#upload'
 
-  get 'upload' => 'screens#upload' , as: :upload
-
+  get 'screens/show' => 'screens#show'
   get 'contact' => 'screens#contact' , as: :contact
 
   get 'help' => 'screens#help' , as: :help
 
   get 'about' => 'screens#about' , as: :about
+
 
 
 
