@@ -6,6 +6,10 @@
 <br>
 <br>
 
+<div class="jumbotron">
+  <div class="container">
+
+
 <%= form_for :user do |u| %>
     <div>
       First Name:  <%= u.text_field :first_name %><br><br>
@@ -15,6 +19,7 @@
       Mailing Address: <%= u.text_field :mailing_address %><br><br>
       Phone Number: <%= u.text_field :phone_number %><br><br>
       Zip Code: <%= u.text_field :zip_code %><br><br>
+      Image Upload: <%= u.file_field :photo %><br><br>
 
 
     </div>
@@ -23,6 +28,13 @@
       </div>
       <% end %>
 
+</div>
+  </div>
+<br>
+<br>
+<br>
+<br>
+<br>
 <footer>
-  <p>&copy; Owens Corning 2015</p>
+  <p>&copy;1996-2015 Owens Corning</p>
 </footer>

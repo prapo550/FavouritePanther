@@ -1,9 +1,40 @@
 
+<div class="jumbotron">
+  <div class="container">
 
     <div>
       <p>Thank you for uploading your favourite Pink Panther Image</p>
 
+<br>
+      <br>
 
+      <p>Here are the uploaded images </p>
+
+      <% @user.each do |u| %>
+
+
+          <div>
+           <h3>Name :</h3> <h3><%= u.first_name %></h3>
+            <td><%= image_tag u.photo.url(:medium) %></td>
+
+
+
+            <hr>
+
+          </div>
+      <% end %>
       <hr>
 
     </div>
+</div>
+  </div>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer>
+      <p>&copy;1996-2015 Owens Corning</p>
+    </footer>
