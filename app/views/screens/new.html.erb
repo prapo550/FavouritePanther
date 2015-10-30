@@ -10,6 +10,7 @@
   <div class="container">
 
 
+
 <%= form_for :user do |u| %>
     <div>
       First Name:  <%= u.text_field :first_name %><br><br>
@@ -23,7 +24,10 @@
 
 
     </div>
-    <div>
+
+
+
+      <div>
       <%= u.submit "Sign Up" %>
       </div>
       <% end %>

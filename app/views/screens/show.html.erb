@@ -8,13 +8,13 @@
 <br>
       <br>
 
-      <p>Here are the uploaded images </p>
+      <p>Here are the Uploaded Images</p>
 
       <% @user.each do |u| %>
 
 
           <div>
-           <h3>Name :</h3> <h3><%= u.first_name %></h3>
+           <h3>First Name :</h3> <h3><%= u.first_name %></h3>
             <td><%= image_tag u.photo.url(:medium) %></td>
 
 
